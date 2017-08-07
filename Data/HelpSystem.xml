@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebHelpSystem DefaultUrl="content/emptystartingtopic.htm" Toc="Data/Toc.js" Index="Data/Index.js" Concepts="Data/Concepts.js" BrowseSequence="Data/BrowseSequence.js" SearchDatabase="Data/Search.js" Synonyms="Data/Synonyms.xml" SearchUrl="content/search.htm" SkinName="HTML5 - Worldpay Top Navigation" SkinID="HTML5___Worldpay_Top_Navigation" Multilingual="false" Skins="HTML5 - Worldpay Top Navigation" BuildTime="01/08/2017 11:32:02" BuildVersion="13.1.6219.3621" TargetType="WebHelp2" SkinTemplateFolder="Skin/" InPreviewMode="false" MoveOutputContentToRoot="false" ReplaceReservedCharacters="true" MakeFileLowerCase="true" UseCustomTopicFileExtension="false" PreventExternalUrls="false" EnableResponsiveOutput="true" IncludeGlossarySearchResults="true" ResultsPerPage="20" xml:lang="en-gb" LanguageName="English">
+    <CatapultSkin Version="2" SkinType="WebHelp2" ComponentType="MasterPage" TemplateName="Fluid" Comment="HTML5 Fluid Layout" EnableResponsiveOutput="true" RemoveImagesOnSave="true" conditions="General.GlobalLink" LogoUrl="http://www.worldpay.com/" Name="HTML5 - Worldpay Top Navigation" SkinID="HTML5___Worldpay_Top_Navigation" SkinClass="_Skins_HTML5___Worldpay_Top_Navigation" HideNavOnStartup="False">
+        <WebHelpOptions NavigationPanePosition="Left" TopMenuDepth="2" />
+    </CatapultSkin>
+</WebHelpSystem>
