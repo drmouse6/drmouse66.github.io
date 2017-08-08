@@ -1,0 +1,1531 @@
+/*<meta conditions="general.GlobalLink" />*/
+
+@import url('../prettify/prettify.css');
+
+/*delete when we move to Flare 12*/
+
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansregular.eot');
+	src: url('fonts/adellesansregular.eot?#iefix') format('embedded-opentype'), url('fonts/adellesansregular.woff') format('woff'), url('fonts/adellesansregular.ttf') format('truetype'), url('fonts/adellesansregular.svg#AdelleSansRegular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansthinitalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansthin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesanslightitalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesanslight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansitalic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansbolditalic.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face 
+{
+	font-family: 'Adelle Sans';
+	src: url('fonts/adellesansbold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body
+{
+	font-family: 'Adelle Sans', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	color: #333;
+	max-width: 1280px !important;
+	font-weight: 100;
+	background-color: #F7F7F7;
+	margin: auto !important;
+}
+
+/* ---------------------------------- Topic Styles ------------------------------------ */
+
+html.SelectorSwitch
+{
+	mc-master-page: url('../masterpages/3wayswitchpage.flmsp');
+}
+
+html.Standard
+{
+	mc-master-page: url('../masterpages/standardpage.flmsp');
+}
+
+html.TripaneStandard
+{
+	mc-master-page: url('../masterpages/tripanestandard.flmsp');
+}
+
+html.PDFHome
+{
+	
+}
+
+/* --------------------------------- Heading Styles -----------------------------------*/
+
+h1
+{
+	font-size: 240%;
+	margin-top: 0;
+	margin-bottom: 0.4em;
+	font-weight: 200;
+}
+
+h1.Contents
+{
+	mc-heading-level: 0;
+}
+
+h1.Appendix,
+h2.Appendix,
+h3.Appendix
+{
+	
+}
+
+h2
+{
+	font-size: 200%;
+	margin-top: 1em;
+	margin-bottom: 0.62em;
+	font-weight: 300;
+	color: #f01e14;
+}
+
+h3
+{
+	font-size: 140%;
+	margin-top: 1em;
+	margin-bottom: 0.71em;
+	font-weight: 400;
+}
+
+h4
+{
+	font-size: 100%;
+	font-weight: 500;
+	color: #000;
+	margin-top: 1em;
+	margin-bottom: 0;
+	mc-heading-level: 0;
+}
+
+h5
+{
+	font-size: 100%;
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 1em;
+	margin-bottom: 0;
+	mc-heading-level: 0;
+}
+
+h6
+{
+	font-size: 90%;
+	font-weight: 600;
+	margin-top: 1em;
+	margin-bottom: 0;
+	mc-heading-level: 0;
+}
+
+/* ------------------------------- Paragraph Styles ----------------------------------*/
+
+p
+{
+	margin-top: 0.73em;
+	margin-bottom: 0.36em;
+	clear: both;
+	mc-next-tag: p;
+}
+
+p.KeepWithNext
+{
+	page-break-after: avoid;
+	mc-next-class: none;
+}
+
+p.Copyright
+{
+	font-size: 0.75rem;
+	font-weight: 100;
+	margin-top: 0;
+	color: inherit;
+	mc-disabled: true;
+}
+
+/* Use to centre text */
+
+.center
+{
+	text-align: center;
+}
+
+/* Use to wrap paras with long unbreakable strings such as urls, paths and inline code */
+
+.wrap
+{
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+/* Use to add horizontal scrollbars */
+
+div.scrollx
+{
+	overflow-x: auto;
+}
+
+/*Authors highlighters */
+
+p.highlightYellow
+{
+	background-color: #f3f315;
+	mc-conditions: 'media.NotUsed';
+}
+
+p.highlightBlue
+{
+	background-color: #00ffff;
+	mc-conditions: 'media.NotUsed';
+}
+
+p.highlightGreen
+{
+	background-color: #00ff00;
+	mc-conditions: 'media.NotUsed';
+}
+
+p.highlightPink
+{
+	background-color: #ff00ff;
+	mc-conditions: 'media.NotUsed';
+}
+
+/* ---------------------------------- List Styles ------------------------------------*/
+
+ol,
+ul
+{
+	color: #f01e14;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ol
+{
+	list-style-type: decimal;
+	font-weight: 300;
+}
+
+ol ol
+{
+	margin-left: -13px;
+	list-style-type: lower-alpha;
+}
+
+ol ol ol
+{
+	margin-left: -18px;
+	list-style-type: lower-roman;
+}
+
+ol ul
+{
+	margin-left: -12px;
+	list-style-image: url('../images/icons/dashbullet_html.png');
+}
+
+ul
+{
+	color: #333;
+	list-style-image: url('../images/icons/discbullet_html.png');
+}
+
+ul ul
+{
+	margin-left: -18px;
+	list-style-image: url('../images/icons/dashbullet_html.png');
+}
+
+ul ul ul
+{
+	margin-left: -18px;
+	list-style-image: url('../images/icons/circlebullet_html.png');
+}
+
+li
+{
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul > li
+{
+	margin-top: 0.73em;
+	margin-bottom: 0.36em;
+	padding-left: 8px;
+}
+
+ul > li > p
+{
+	margin-left: 0;
+}
+
+ol p
+{
+	color: #333;
+	margin-left: 8px;
+}
+
+ol td
+{
+	color: #333;
+}
+
+ol div.CodeBlock
+{
+	margin-left: 8px;
+}
+
+/* -------------------------------- Character Styles ---------------------------------*/
+/*reduce impact of bold slightly*/
+
+em
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #000;
+}
+
+b
+{
+	font-weight: 500;
+	color: #000;
+}
+
+span[style*="font-weight"]
+{
+	font-weight: 500 !important;
+	color: #000;
+}
+
+/* Colour classes to mark up code and other text */
+
+.WorldpayRed
+{
+	color: #f01e14;
+	font-weight: 500;
+}
+
+.WorldpayCoral
+{
+	color: #ff2e3a;
+	font-weight: 500;
+}
+
+.WorldpayRose
+{
+	color: #ff5f74;
+	font-weight: 500;
+}
+
+.WorldpayWine
+{
+	color: #b41437;
+	font-weight: 500;
+}
+
+.WorldpayMango
+{
+	color: #E18B00;
+	font-weight: 500;
+	/*color: #ffb900;*/
+}
+
+.WorldpayPurple
+{
+	color: #69197d;
+	font-weight: 500;
+}
+
+.WorldpayEmerald
+{
+	color: #007867;
+	font-weight: 500;
+}
+
+.WorldpayLtGrey
+{
+	color: #5a5a5a;
+	font-weight: 500;
+}
+
+abbr,
+acronym,
+address,
+big,
+cite,
+del,
+fieldset,
+ins,
+MadCap|helpControlMenuItem,
+MadCap|slideThumbnail,
+pre,
+samp,
+small,
+span.boolean,
+span.state,
+strong,
+tt,
+var
+{
+	mc-disabled: true;
+}
+
+/* ---------------------------------- Code Styles ------------------------------------*/
+/*Use for inline code styles including xml entities */
+
+code
+{
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-weight: 500;
+	color: #000;
+}
+
+code.CodeChar
+{
+	padding: 2px 8px;
+	background-color: #ebebeb;
+	border-radius: 5px;
+}
+
+/* Use for marking up inline xml attributes, not entities */
+
+code.attribute
+{
+	font-weight: 500;
+}
+
+div.CodeBlock	/* This applies the border and horizontal scrollbar to the block of code */
+{
+	background-color: #fff;
+	margin-top: 20px;
+	padding: 5px;
+	border: 1px solid #bebebe;
+	overflow-x: auto;
+	page-break-inside: avoid;
+}
+
+div.CodeBlock p	/* This sets the correct font for paragraphs within the code block.  The white-space property is used to ensure that multiple spaces are displayed */
+{
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	max-width: 100%;
+	white-space: pre;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p.CodeBlockCaption
+{
+	text-align: center;
+	color: #000;
+	margin-bottom: 2em;
+	font-weight: 500;
+	font-size: 82%;
+	page-break-before: avoid;
+	mc-next-class: none;
+}
+
+p.SelectCode
+{
+	font-weight: normal;
+	background-color: #bebebe;
+	cursor: pointer;
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	display: inline-block;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 0;
+	mc-disabled: true;
+	margin-top: 20px;
+}
+
+p.SelectCode + div.CodeBlock,
+div.KeepTogether > div.CodeBlock
+{
+	margin-top: 0;
+}
+
+/*------------------- Example style -------------------*/
+
+div.Example	/* This applies a light mango background to some text */
+{
+	background-color: #ffeab2;
+	width: 100%;
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+div.Example p	/* This sets the Example paragraph setting */
+{
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+div.Example > div.CodeBlock p
+{
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.Example p.SelectCode
+{
+	margin-bottom: 0;
+}
+
+/* ------------------------------- Link & Xref Styles --------------------------------*/
+
+MadCap|xref
+{
+	color: #007867;
+	font-weight: 400;
+	text-decoration: none;
+	mc-format: '{paratext}';
+}
+
+MadCap|xref.Figure
+{
+	mc-format: 'Figure: {paratext}';
+}
+
+MadCap|xref.Table
+{
+	mc-format: 'Table: {paratext}';
+}
+
+a,
+a:link,
+a:visited
+{
+	color: #007867;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+p.breadcrumb a:hover
+{
+	color: #007867;
+	text-decoration: underline;
+}
+
+a[href^="mailto:"]
+{
+	color: #007867;
+	font-weight: 400;
+}
+
+a img
+{
+	border: none;
+}
+
+div.MCBreadcrumbsBox_0
+{
+	display: inline;
+}
+
+p.breadcrumb
+{
+	font-size: 0.75rem;
+	display: inline;
+	font-weight: 300;
+}
+
+span.breadcrumbRed
+{
+	color: #f01e14;
+}
+
+p.breadcrumb a
+{
+	color: #737373;
+	font-weight: 300;
+}
+
+a.MCBreadcrumbsLink
+{
+	font-weight: normal;
+	color: #5a5a5a;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #5a5a5a;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #007867;
+}
+
+span.LinkInactive
+{
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Next and previous page styles */
+
+p.NextPage,
+p.PrevPage
+{
+	color: #000;
+	margin-top: 2em;
+	padding-top: 0;
+	padding-bottom: 0;
+	mc-next-class: none;
+}
+
+div.OtherPage	/* Use for a group of see next links at the bottom of a page */
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div.OtherPage p
+{
+	color: #000;
+	font-weight: 500;
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+p.NextPage
+{
+	text-align: right;
+}
+
+p.NextPage::before
+{
+	content: 'Next: \00a0';
+	color: #000;
+	font-weight: 500;
+}
+
+p.PrevPage::before
+{
+	content: '\02039 \00a0 Previous: \00a0';
+	color: #000;
+	font-weight: 500;
+}
+
+p.NextPage a,
+p.PrevPage a,
+div.OtherPage a
+{
+	color: #007867;
+	font-weight: 400;
+}
+
+p.NextPage a::after,
+div.OtherPage a::after
+{
+	content: '\00a0 \0203A';
+}
+
+p.PrevPage + p.NextPage,
+p.NextPage + p.PrevPage
+{
+	margin-top: 0;
+}
+
+p.NextPage a:hover,
+p.PrevPage a:hover,
+div.OtherPage a:hover
+{
+	text-decoration: underline;
+}
+
+/* ----------------------------------- Div Styles ------------------------------------*/
+
+div
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.Border
+{
+	border: solid 1px #bebebe;
+	padding: 8px;
+}
+
+div.KeepTogether
+{
+	page-break-inside: avoid;
+}
+
+.hr
+{
+	
+}
+
+/* --------------------------------- Alert Styles ------------------------------------*/
+
+p.Note,
+p.PreReq,
+p.BestPrac,
+p.Warning
+{
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	mc-next-class: none;
+	font-weight: 300;
+}
+
+p.Note
+{
+	border-left: 3px solid #69197d;
+	mc-auto-number-format: '{b}{color #69197d}Note:\00a0 {/color}{/b}';
+}
+
+p.Warning
+{
+	color: #f01e14;
+	border-left: 3px solid #f01e14;
+	mc-auto-number-format: '{b}{color #f01e14}Warning:\00a0 {/color}{/b}';
+}
+
+p.PreReq
+{
+	border-left: 3px solid #007867;
+	mc-auto-number-format: '{b}{color #007867}Prerequisite:\00a0 {/color}{/b}';
+}
+
+p.BestPrac
+{
+	border-left: 3px solid #e18b00;
+	mc-auto-number-format: '{b}{color #e18b00}Best practice:\00a0 {/color}{/b}';
+}
+
+/* Alerts within a table */
+
+table p.Note,
+table p.Warning,
+table p.PreReq,
+table p.BestPrac
+{
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	border: none;
+}
+
+/* divs for multi-line alerts */
+
+div.Note,
+div.PreReq,
+div.BestPrac,
+div.Warning
+{
+	padding: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 300;
+	page-break-inside: avoid;
+}
+
+div.Note
+{
+	border-left: 3px solid #69197d;
+}
+
+div.PreReq
+{
+	border-left: 3px solid #007867;
+}
+
+div.BestPrac
+{
+	border-left: 3px solid #e18b00;
+}
+
+div.Warning
+{
+	border-left: 3px solid #f01e14;
+}
+
+div.Note > p:first-child,
+div.PreReq > p:first-child,
+div.BestPrac > p:first-child,
+div.Warning > p:first-child
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div.Note > p:first-child
+{
+	mc-auto-number-format: '{b}{color #69197d}Note:\00a0 {/color}{/b}';
+}
+
+div.Warning > p:first-child
+{
+	color: #f01e14;
+	mc-auto-number-format: '{b}{color #f01e14}Warning:\00a0 {/color}{/b}';
+}
+
+div.PreReq > p:first-child
+{
+	mc-auto-number-format: '{b}{color #007867}Prerequisite:\00a0 {/color}{/b}';
+}
+
+div.BestPrac > p:first-child
+{
+	mc-auto-number-format: '{b}{color #e18b00}Best practice:\00a0 {/color}{/b}';
+}
+
+div.Note p,
+div.PreReq p,
+div.BestPrac p
+{
+	margin-top: 3px;
+}
+
+div.Warning p
+{
+	color: #f01e14;
+	margin-top: 3px;
+}
+
+/* ----------------------------- Image/Figure/video Styles ---------------------------------*/
+
+img
+{
+	max-width: 99%;
+}
+
+div.Figure img
+{
+	padding: 3px;
+	border: solid 1px #d3d3d3;
+}
+
+div.Figure
+{
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+img.Thumnail
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-width: 350px;
+	mc-thumbnail-max-height: auto;
+	border: solid 1px #d3d3d3;
+}
+
+.MCPopupThumbnailLink::after
+{
+	content: url('../images/icons/zoombutton.png');
+	vertical-align: top;
+	display: inline-block;
+}
+
+/* responsive container classes for embedding a youtube video - only applies at the mobile bp */
+
+.responsive-container
+{
+	
+}
+
+.responsive-container iframe
+{
+	
+}
+
+/* --------------------------------- Table Styles ------------------------------------*/
+
+table
+{
+	width: 100%;
+}
+
+td p:first-child
+{
+	margin-top: 0;
+}
+
+td p:last-child
+{
+	margin-bottom: 0;
+}
+
+/* ------------------------------- Dropdowns ---------------------------------*/
+
+MadCap|dropDown
+{
+	margin-bottom: 6px;
+	margin-top: 6px;
+	mc-closed-image: url('../images/icons/green-arrow-right-small.png');
+	mc-open-image: url('../images/icons/green-arrow-bottom-small.png');
+}
+
+MadCap|dropDownBody
+{
+	border-left: 1px dashed #bebebe;
+	border-bottom: 1px dashed #bebebe;
+	margin-left: 7px;
+	padding-left: 12.5px;
+	padding-bottom: 10px;
+}
+
+MadCap|dropDownHead
+{
+	
+}
+
+MadCap|dropDownHotspot
+{
+	font-size: 110%;
+	color: #007867;
+	font-weight: 300;
+	padding-left: 5px;
+}
+
+.MCDropDown_Open .MCDropDownHotSpot_
+{
+	padding-top: 3px;
+	/* testing with new fonts */
+}
+
+.MCDropDown_Closed .MCDropDownHotSpot_
+{
+	padding-top: 4px;
+	/* testing with new fonts */
+}
+
+/*Fix needed as MadCap|dropDownHotspot:hover doesn't work */
+
+.dropDownHotspot:link:hover
+{
+	text-decoration: underline;
+}
+
+/*Aligns dropdowns in ordered lists */
+
+ol .MCDropDown_Closed .MCDropDownHotSpot_,
+ol .MCDropDown_Open .MCDropDownHotSpot_
+{
+	margin-left: 8px;
+}
+
+ol .dropDownBody
+{
+	margin-left: 15px;
+}
+
+/* medium layout */
+
+@media only screen and (max-width: 1100px)
+{
+	/*-- Removes the search bar left padding at the tablet/mobile breakpoint --*/
+
+	div.search-bar
+	{
+		padding-left: 0;
+	}
+}
+
+/* Small Layout */
+
+@media screen and (max-width: 641px)
+{
+	body
+	{
+		font-size: 0.9em;
+	}
+
+	h1
+	{
+		font-size: 200%;
+		padding-left: 0;
+		font-weight: 200;
+	}
+
+	h2
+	{
+		font-size: 160%;
+	}
+
+	h3
+	{
+		font-size: 130%;
+	}
+
+	h4
+	{
+		font-size: 100%;
+	}
+
+	/* makes youtube videos responsive at the mobile bp */
+
+	.responsive-container
+	{
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.responsive-container iframe
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.MCPopupThumbnailLink::after
+	{
+		display: none;
+	}
+
+	table,
+	div.CodeBlock p,
+	code.CodeChar,
+	code.attribute
+	{
+		font-size: 95%;
+	}
+
+	p.NextPage::before,
+	p.PrevPage::before
+	{
+		content: ' ';
+	}
+
+	p.PrevPage a::before
+	{
+		content: '\02039 \00a0';
+	}
+}
+
+/* ------------------------------ Title Page Styles ----------------------------------*/
+
+p.GatewayHeading
+{
+	font-size: 182%;
+	font-weight: 500;
+	color: #f01e14;
+	margin-top: 4em;
+	mc-disabled: true;
+}
+
+p.DocumentTitle
+{
+	font-size: 255%;
+	font-weight: 500;
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	mc-disabled: true;
+	color: #919191;
+}
+
+p.DocumentSubtitle
+{
+	font-size: 145%;
+	margin-top: 0.75em;
+	margin-bottom: 0;
+	mc-disabled: true;
+}
+
+p.Version
+{
+	font-size: 145%;
+	margin-top: 1em;
+	margin-bottom: 0;
+	mc-disabled: true;
+}
+
+p.UseThisGuideTo
+{
+	font-size: 109%;
+	font-weight: 500;
+	color: #f01e14;
+	margin-top: 6em;
+	margin-bottom: 0;
+	mc-disabled: true;
+}
+
+MadCap|breadcrumbsProxy
+{
+	border-bottom: none;
+	mc-breadcrumbs-prefix: ' ';
+	font-size: 0.8em;
+	mc-breadcrumbs-divider: '  |  ';
+}
+
+/* --------------------------------- TOC Styles --------------------------------------*/
+
+p.TOC1
+{
+	color: #f01e14;
+	font-size: 14pt;
+	font-weight: bold;
+	margin-top: 0pt;
+	margin-bottom: 5pt;
+}
+
+p.TOC2
+{
+	color: #000;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-left: 0.15in;
+	margin-top: 0pt;
+	margin-bottom: 5pt;
+}
+
+p.TOC3
+{
+	color: #000;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-left: 0.31in;
+	margin-top: 0pt;
+	margin-bottom: 5pt;
+}
+
+p.TOC4
+{
+	color: #000;
+	font-size: 11pt;
+	font-weight: normal;
+	margin-left: 0.46in;
+	margin-top: 0pt;
+	margin-bottom: 5pt;
+}
+
+MadCap|tocProxy
+{
+	border-top-style: none;
+}
+
+/* ----------------------------- Page Layout Styles ----------------------------------*/
+
+table.Header
+{
+	color: #000;
+	mc-disabled: true;
+	font-size: 10pt;
+}
+
+@media print
+{
+	body
+	{
+		font-family: Calibri;
+		font-size: 11pt;
+		background-color: transparent;
+		mc-hyphenate: never;
+	}
+
+	/* ------------------------------- Heading Styles --------------------------------*/
+
+	h1
+	{
+		color: #f01e14;
+		mc-auto-number-position: inside-head;
+		mc-auto-number-format: 'GH:{n+}{ =0}{ =0}{ =0}  ';
+		font-size: 20pt;
+	}
+
+	h1.Contents
+	{
+		mc-auto-number-position: none;
+	}
+
+	h1.Appendix
+	{
+		mc-auto-number-format: 'GA:Appendix {A+}: ';
+	}
+
+	h2
+	{
+		margin-top: 18pt;
+		mc-auto-number-position: inside-head;
+		mc-auto-number-format: 'GH:{n}.{n+}{ =0}{ =0}  ';
+		font-size: 18pt;
+		color: #333;
+	}
+
+	h2.Appendix
+	{
+		mc-auto-number-position: none;
+	}
+
+	h3
+	{
+		margin-top: 18pt;
+		mc-auto-number-position: inside-head;
+		mc-auto-number-format: 'GH:{n}.{n}.{n+}{ =0}  ';
+		font-size: 16pt;
+	}
+
+	h3.Appendix
+	{
+		mc-auto-number-position: none;
+	}
+
+	h4
+	{
+		font-size: 14pt;
+	}
+
+	h4.Appendix
+	{
+		mc-auto-number-position: none;
+	}
+
+	/* ------------------------------ Paragraph Styles -------------------------------*/
+
+	p
+	{
+		margin-top: 8pt;
+		margin-bottom: 4pt;
+	}
+
+	/* -------------------------------- List Styles ----------------------------------*/
+
+	ol
+	{
+		margin-left: 0.39in;
+	}
+
+	ol ol
+	{
+		margin-left: 0.49in;
+	}
+
+	ol ol ol
+	{
+		margin-left: 0.49in;
+	}
+
+	ol ul
+	{
+		margin-left: 0.29in;
+		list-style-image: url('../images/icons/dashbullet_pdf.png');
+	}
+
+	ul
+	{
+		margin-left: 0.2in;
+		list-style-image: url('../images/icons/discbullet_pdf.png');
+	}
+
+	ul ul
+	{
+		margin-left: 0.05in;
+		list-style-image: url('../images/icons/dashbullet_pdf.png');
+	}
+
+	ul ul ul
+	{
+		margin-left: 0.05in;
+		list-style-image: url('../images/icons/circlebullet_pdf.png');
+	}
+
+	li
+	{
+		padding-left: 0in;
+		margin-left: 0in;
+		font-size: 11pt;
+		line-height: 90%;
+	}
+
+	li p
+	{
+		color: #5a5a5a;
+		font-size: 11pt;
+		margin-left: 0.24in;
+	}
+
+	ul > li
+	{
+		padding-left: -0.2in;
+		/* Creates space between bullet icon and text */
+		margin-left: 0.59in;
+	}
+
+	ul > li > p
+	{
+		padding-left: -0.2in;
+		/* Fixes space between bullet icon and text when there is a nested p */
+		margin-left: 0.2in;
+	}
+
+	ul li p.Note,
+	ul li p.Warning,
+	ul li p.PreReq,
+	ul li p.BestPrac
+	{
+		margin-left: 0;
+	}
+
+	/* ----------------------------------- Code styles -------------------------------------*/
+	/* Decreases the code size for pdf content */
+
+	code,
+	code.CodeChar
+	{
+		font-size: 9pt;
+	}
+
+	div.CodeBlock
+	{
+		border: none;
+		background-color: #F7F7F7;
+	}
+
+	div.CodeBlock p
+	{
+		font-size: 9pt;
+		white-space: pre-wrap;
+	}
+
+	p.CodeBlockCaption
+	{
+		mc-auto-number-position: inside-head;
+		mc-auto-number-format: 'GC:Code example {n+}: ';
+	}
+
+	/* ----------------------------- Link & Xref Styles ------------------------------*/
+
+	MadCap|xref
+	{
+		font-weight: bold;
+		text-decoration: none;
+		mc-format: '{i}{paratext}{/i} {pageref}';
+	}
+
+	MadCap|xref.Figure
+	{
+		font-weight: bold;
+		text-decoration: none;
+		mc-format: 'Figure {paranumonly}: {paratext}';
+	}
+
+	MadCap|xref.Table
+	{
+		font-weight: bold;
+		text-decoration: none;
+		mc-format: 'Table {paranumonly}: {paratext}';
+	}
+
+	a,
+	a:link,
+	a:visited
+	{
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	/* --------------------------- Image/Figure Styles -------------------------------*/
+
+	img
+	{
+		max-width: 98%;
+	}
+
+	div.Figure img
+	{
+		padding: 2pt;
+		border: solid 0.25pt #d3d3d3;
+	}
+
+	/* ------------------------------ Title Page Styles ----------------------------------*/
+
+	p.GatewayHeading
+	{
+		font-weight: bold;
+		font-size: 20pt;
+		margin-top: 0;
+	}
+
+	p.DocumentTitle
+	{
+		font-weight: bold;
+		font-size: 28pt;
+		margin-top: 10pt;
+		margin-bottom: 0;
+	}
+
+	p.DocumentSubtitle
+	{
+		font-size: 16pt;
+		margin-top: 10pt;
+		margin-bottom: 0;
+	}
+
+	p.Version
+	{
+		font-size: 16pt;
+		margin-top: 28pt;
+	}
+
+	p.UseThisGuideTo
+	{
+		font-size: 12pt;
+		font-weight: bold;
+		margin-top: 0;
+		frame-break-before: always;
+	}
+
+	/* Next and previous page styles */
+
+	p.NextPage,
+	p.PrevPage,
+	div.OtherPage,
+	p.SelectCode
+	{
+		display: none;
+	}
+
+	/* Dropdown styles */
+
+	MadCap|dropDownBody
+	{
+		border: none;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	/*for backwards compatibility - hides any back to top buttons from pdf output */
+
+	div.BackToTop,
+	div.BackToTopSmall
+	{
+		display: none;
+	}
+}
+
+@media Tripane
+{
+	body
+	{
+		background-color: #fff;
+		padding-left: 1rem;
+		padding-top: 0.5rem;
+		padding-right: 1rem;
+	}
+
+	h1
+	{
+		margin-top: 1em;
+	}
+
+	/* Next and previous page styles */
+
+	p.NextPage,
+	p.PrevPage,
+	div.OtherPage
+	{
+		display: none;
+	}
+
+	/*for backwards compatibility - hides any back to top buttons from tripane output */
+
+	div.BackToTop,
+	div.BackToTopSmall
+	{
+		display: none;
+	}
+}
+
+body
+{
+	background-color: #fff;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+}
+
+h1
+{
+	margin-top: 1em;
+}
+
+p.NextPage,
+p.PrevPage,
+div.OtherPage
+{
+	display: none;
+}
+
+div.BackToTop,
+div.BackToTopSmall
+{
+	display: none;
+}
+

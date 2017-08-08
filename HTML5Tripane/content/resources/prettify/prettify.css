@@ -1,0 +1,177 @@
+/*<meta conditions="general.GlobalLink" />*/
+
+/* ################## Prettify Styles - Begin ###################### */
+
+.pln
+{
+	color: #000;
+}
+
+@media screen
+{
+	.str
+	{
+		color: #007867;
+		font-weight: 500;
+		/* #080 bright green */
+	}
+
+	.kwd
+	{
+		color: #1962BC;
+		font-weight: 500;
+		/* #008 royal blue */
+	}
+
+	.com
+	{
+		color: #b41437;
+		font-weight: 500;
+		/* #800 maroon */
+	}
+
+	.typ
+	{
+		color: #000;
+		/* #606 violet */
+	}
+
+	.lit
+	{
+		color: #ff5f74;
+		font-weight: 500;
+		/* #066 teal */
+	}
+
+	.pun,
+	.opn,
+	.clo
+	{
+		color: #000;
+		/* #660 olive */
+	}
+
+	.tag
+	{
+		color: #1962BC;
+		font-weight: 500;
+		/* #008 royal blue */
+	}
+
+	.atn
+	{
+		color: #333;
+		/* #606 violet */
+	}
+
+	.atv
+	{
+		color: #007867;
+		font-weight: 500;
+		/* #080 bright green */
+	}
+
+	.dec,
+	.var
+	{
+		color: #333;
+		font-weight: 500;
+		/* #606 violet */
+	}
+
+	.fun
+	{
+		color: #f01e14;
+		font-weight: 500;
+		/* red */
+	}
+}
+
+@media print, projection
+{
+	.str
+	{
+		color: #060;
+	}
+
+	.kwd
+	{
+		color: #006;
+		font-weight: 500;
+	}
+
+	.com
+	{
+		color: #600;
+		font-style: italic;
+	}
+
+	.typ
+	{
+		color: #404;
+		font-weight: 500;
+	}
+
+	.lit
+	{
+		color: #044;
+	}
+
+	.pun,
+	.opn,
+	.clo
+	{
+		color: #440;
+	}
+
+	.tag
+	{
+		color: #006;
+		font-weight: 500;
+	}
+
+	.atn
+	{
+		color: #404;
+	}
+
+	.atv
+	{
+		color: #060;
+	}
+}
+
+.prettyprint
+{
+	
+}
+
+ol.linenums
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8
+{
+	list-style-type: none;
+}
+
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9
+{
+	background: #eee;
+}
+
+/* ################## Prettify Styles - End ###################### */
+

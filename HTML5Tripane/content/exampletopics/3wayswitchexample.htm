@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="SelectorSwitch" data-mc-search-type="Stem" data-mc-help-system-file-name="tripane.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="Tripane" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>3 Way switch example — OneTwoThree</title>
+        <link rel="shortcut icon" href="http://www.worldpay.com/sites/all/themes/worldpay_subthemev2/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/navigationstyles.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/scriptstyles.css" rel="stylesheet" />
+        <style>html.InternalUseSwitch
+{
+	mc-master-page: url('../HowToSwitch.flmsp');
+}
+
+</style>
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../resources/prettify/run_prettify.js">
+        </script>
+        <script src="../resources/scripts/gtm.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../tripane.htm#exampletopics/3wayswitchexample.htm">Show guide navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHWK24J" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="content"><a name="nearlytop"></a>
+            <!-- Specifies the topnav breadcrumb format -->
+            <p class="breadcrumb" data-mc-conditions="Media.NotTopNav"><a href="https://drmouse66.github.io" target="_blank">Home</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><a href="https://drmouse66.github.io" target="_blank">Developers</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><a href="https://drmouse66.github.io" target="_blank">XML API Docs</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><span class="breadcrumbRed"><span class="breadcrumbRed">[Website or Guide Title]</span></span>
+            </p>
+            <p id="globalsearch"><a href="http://www.worldpay.com/global/search/site?keyword=">Click here to search the entire website</a>
+            </p>
+            <div class="row" style="padding-bottom:2em; margin-left:auto; margin-right:auto;">
+                <div class="medium-3 columns" style="padding-left:0;">
+                    <div class="sideContent">
+                        <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-linked-toc="Data/Tocs/SideNavMenu.js" data-mc-side-menu="True" data-mc-max-depth="-1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="False" data-mc-include-parent="False" data-mc-toc="True">
+                        </ul>
+                    </div>
+                    <!--end of sidecontent-->
+                </div>
+                <div class="medium-9 small-12 columns" style="padding-right:0;">
+                    <div class="row collapse">
+                        <div class="clearfix">
+                            <!--<script type="text/javascript" src="http://code.jquery.com/jquery.min.js">
+			</script>-->
+                            <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+				$('input[type="radio"]').click(function(){
+				if($(this).attr("value")=="one"){
+				$(".box").not(".one").hide();
+				$(".one").show();
+				localStorage.setItem("Options","one");
+				}
+				if($(this).attr("value")=="two"){
+				$(".box").not(".two").hide();
+				$(".two").show();
+				localStorage.setItem("Options","two");
+				}
+				if($(this).attr("value")=="three"){
+				$(".box").not(".three").hide();
+				$(".three").show();
+				localStorage.setItem("Options","three");
+				}
+				});
+			});/*]]>*/</script>
+                        </div>
+                        <div class="toggle-btn-grp cssonly">
+                            <div>
+                                <input type="radio" name="Options" id="one" value="one" checked="checked" />
+                                <label class="toggle-btn"> One </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="Options" id="two" value="two" />
+                                <label class="toggle-btn"> Two </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="Options" id="three" value="three" />
+                                <label class="toggle-btn"> Three </label>
+                            </div>
+                        </div>
+                        <h1>3 Way switch example — <span class="box one">One</span><span class="box two">Two</span><span class="box three">Three</span></h1>
+                        <p data-mc-conditions="Media.NotPDF"><span class="box one">This page explains option one. </span>
+                        </p>
+                        <p data-mc-conditions="Media.NotPDF"><span class="box two">This page explains option two. </span>
+                        </p>
+                        <p data-mc-conditions="Media.NotPDF"><span class="box three">This page explains option three. </span>
+                        </p>
+                        <p class="WorldpayRed" data-mc-conditions="Media.NotPDF">You are viewing this page for <span class="box one">One</span><span class="box two">Two</span><span class="box three">Three</span>. To change this use the buttons at the top of the page.</p>
+                        <div class="hr">
+                        </div>
+                        <div class="box one">
+                            <h2 data-mc-conditions="">Option one</h2>
+                            <p data-mc-conditions="">Integer congue ex in suscipit imperdiet. Aenean id scelerisque nulla. Vivamus rutrum lorem in diam dictum, vel tempus neque scelerisque. Nulla faucibus feugiat leo, quis iaculis justo sollicitudin nec. Phasellus molestie arcu vitae egestas dapibus. Fusce auctor et metus sit amet molestie. </p>
+                            <p data-mc-conditions="">Proin gravida elit quis diam rhoncus, eget pretium nisl ultrices. Vestibulum porttitor cursus lorem sed cursus.</p>
+                        </div>
+                        <div class="box two">
+                            <h2 data-mc-conditions="">Option two</h2>
+                            <p data-mc-conditions="">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eget egestas ante, in consequat velit. Vestibulum finibus diam non interdum vulputate. Nullam eleifend ipsum a nunc feugiat finibus. Curabitur lacus justo, fermentum sit amet leo id, euismod rutrum diam. Nunc nulla nunc, varius non ultricies non, faucibus at neque. </p>
+                            <p data-mc-conditions="">Nulla diam sem, auctor dapibus gravida eget, pretium eu augue. Ut et leo mi. Quisque ac metus pharetra, aliquam magna ac, lobortis libero. Donec a feugiat est. Nunc faucibus commodo pulvinar. Phasellus bibendum nisi non elementum consectetur.</p>
+                        </div>
+                        <div class="box three">
+                            <h2>Option three</h2>
+                            <p>Aliquam augue odio, pellentesque sed blandit eu, blandit et sapien. Nunc ultrices scelerisque urna, id vehicula turpis porta ac. Donec id mollis neque, a vestibulum nisl. Ut diam mi, tincidunt et sapien ut, aliquam convallis metus. Nam vitae urna eleifend, rhoncus orci sed, imperdiet risus. Integer egestas eros et feugiat viverra. </p>
+                            <p>Nam tincidunt maximus sem eu accumsan. Nunc gravida tellus sed porttitor efficitur. Phasellus ac neque sit amet elit ornare molestie eget sed nisl. Praesent fermentum diam vitae aliquet eleifend. Mauris mollis, nibh sit amet finibus vestibulum, justo nunc blandit elit, nec venenatis nunc nisi vitae dolor. Ut nec magna ligula. Sed ut erat tempus odio pellentesque accumsan non ac tellus.</p>
+                        </div>
+                        <div class="box one">
+                            <p>Box one content</p>
+                        </div>
+                        <div class="box two">
+                            <p>Box two content</p>
+                        </div>
+                        <div class="box three">
+                            <p>Box three content</p>
+                        </div>
+                        <p class="PrevPage"><a href="selectcodeexample.htm" class="MCXref xref">Select code example</a>
+                        </p>
+                        <p class="NextPage"><a href="realexampletopic.htm">Real example topic</a>
+                        </p>
+                    </div>
+                    <!--end of rowcollapse-->
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">/* <![CDATA[ */
+			$(".one").show();
+		/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+			var Options = localStorage.getItem('Options');
+			document.getElementById(Options).checked = true;
+		/* ]]> */</script>
+        <script type="text/javascript">/* <![CDATA[ */
+			var Options = localStorage.getItem('Options');
+
+			if(Options=="one"){
+			$(".box").not(".one").hide();
+			$(".one").show();
+			}
+			if(Options=="two"){
+			$(".box").not(".two").hide();
+			$(".two").show();
+			}
+			if(Options=="three"){
+			$(".box").not(".three").hide();
+			$(".three").show();
+			}
+		/* ]]> */</script>
+        <script src="../resources/scripts/select_all.js">
+        </script>
+        <script>/* <![CDATA[ */
+			$('.navigation-wrapper')
+			.prepend('<div class="greenlinks"><a href="http://www.worldpay.com/global/support" target="_blank">Support</a><a href="http://support.worldpay.com/support/xmlapi/content/common/logins.htm">Account Login</a></div>');
+		/* ]]> */</script>
+        <script type="text/javascript">
+        </script>
+        <!--Scroll to top links --><a href="#" class="scrollToTop"></a><a href="#nearlytop" class="nearlyscrollToTop"></a>
+        <div class="abovefooter">
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>

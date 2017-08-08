@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-gb" xml:lang="en-gb" class="" data-mc-search-type="Stem" data-mc-help-system-file-name="tripane.xml" data-mc-path-to-help-system="../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="Tripane" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Real example topic</title>
+        <link rel="shortcut icon" href="http://www.worldpay.com/sites/all/themes/worldpay_subthemev2/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../resources/tablestyles/tripanefootertable.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/tripaneskinstyles.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/left-link-bg.png') no-repeat center center, linear-gradient(#007867, #007867);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../Skins/Default/Stylesheets/Images/right-link-bg.png') no-repeat center center, linear-gradient(#007867, #007867);
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../resources/tablestyles/standardtable.css" rel="stylesheet" />
+        <link href="../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <script src="../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="../resources/prettify/run_prettify.js">
+        </script>
+        <script src="../resources/scripts/gtm.js">
+        </script>
+    </head>
+    <body>
+        <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop"><a href="../../tripane.htm#exampletopics/realexampletopic.htm">Show guide navigation</a>
+        </p>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHWK24J" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <script type="text/javascript" src="../resources/scripts/select_all.js">
+        </script>
+        <div>
+            <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TripaneToolbar mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                <div class="button-group-container-left">
+                    <button class="button needs-pie previous-topic-button" title="Previous">
+                        <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="previous topic" />
+                    </button>
+                    <button class="button needs-pie next-topic-button" title="Next">
+                        <img src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="next topic" />
+                    </button>
+                </div>
+            </div>
+            <!-- Specifies the topnav breadcrumb format -->
+            <p class="breadcrumb" data-mc-conditions="Media.NotTopNav"><a href="https://drmouse66.github.io" target="_blank">Home</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><a href="https://drmouse66.github.io" target="_blank">Developers</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><a href="https://drmouse66.github.io" target="_blank">XML API Docs</a>
+                <img src="../resources/images/icons/breadcrumbarrow_28x13.png" style="vertical-align: middle;width: 28;height: 13;" /><span class="breadcrumbRed"><span class="breadcrumbRed">[Website or Guide Title]</span></span>
+            </p>
+        </div>
+        <h1>Real example topic</h1>
+        <p>The XML&#160;you submit to Worldpay must be valid, and must conform to our <a href="#">Document Type Definition</a> (DTD). </p>
+        <p class="hr" />
+        <div class="H2Block">
+            <h2><a name="_Ref353279162"></a><a name="_Ref353279171"></a>XML and DTD declarations</h2>
+            <p>All valid, well-formed XML files begin with an XML declaration. </p>
+            <p>They must also contain a document type declaration, containing the root element <code class="CodeChar">&lt;paymentService&gt;</code> and reference to the public Worldpay payment service DTD, as shown below:</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                    <p>&lt;!DOCTYPE paymentService PUBLIC "-//WorldPay//DTD WorldPay PaymentService v1//EN"</p>
+                    <p>"http://dtd.worldpay.com/paymentService_v1.dtd"&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption"> XML and DTD declaration</p>
+        </div>
+        <div class="H2Block">
+            <h2>DTD version number and Merchant Code</h2>
+            <p>The paymentService root element has two required attributes:</p>
+            <ul>
+                <li value="1">
+                    <p>The version number of the Worldpay DTD (paymentService_v1.dtd) </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Your merchant code (which is always written in capitals)  </p>
+                </li>
+            </ul>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>To find your merchant code, in the Merchant Interface go to <b>Profile</b> &gt; <b>Identification</b>.</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;paymentService version="1.4" merchantCode="MYMERCHANT"&gt;</p>
+                    <p>  &lt;submit&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;[Order information goes here]</p>
+                    <p>  &lt;/submit&gt;</p>
+                    <p>&lt;/paymentService&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption" xml:space="preserve">DTD&#160;version and Merchant Code</p>
+        </div>
+        <div class="H2Block">
+            <h2 class="Heading2"><a name="The"></a>The order element </h2>
+            <p>The <code class="CodeChar">&lt;order&gt;</code> element is:</p>
+            <ul>
+                <li value="1">
+                    <p>Found within the <code class="CodeChar">&lt;submit&gt;</code> element.</p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Used to describe the goods or services that the shopper is ordering, and includes the shopper's payment details, payment method details, shipping address and billing address. </p>
+                </li>
+                <li value="3">
+                    <p><code class="attribute">orderCode</code>  is a required attribute of the order element. </p>
+                </li>
+            </ul>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>If your shopper’s browser doesn’t have cookies enabled, it is possible that another person can access the shopper’s session ID. This is because the URL contains the session ID. We recommend that you ask your shoppers to enable cookies on their web browsers. Cookies minimise the opportunity to record a session ID and misuse it. </p>
+            <h3 class="Heading3">orderCode attribute</h3>
+            <p>The <code class="attribute">orderCode</code> attribute:</p>
+            <ul>
+                <li value="1">
+                    <p>Must have a unique value.</p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Can be up to 64 characters in length. Spaces, quotation marks and code brackets ( &lt; and &gt;) are not allowed.</p>
+                </li>
+            </ul>
+            <p class="Warning" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f01e14;&quot; class=&quot;mcFormatColor&quot;&gt;Warning:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f01e14;" class="mcFormatColor">Warning:&#160; </span></b></span></span>An order with a previously used order code cannot be processed correctly. If you use a previously used order code, you will receive error messages (error code 5) and have problems with reporting. For more information about error codes, see <a href="#">XML Error Codes</a>.</p>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>You can use the <code class="attribute">orderCode</code> attribute to contain a Cart ID, if the Cart ID is unique (assuming you already have a shopping cart. If you haven't, see <a href="http://support.worldpay.com/support/bg/index.php?page=development&amp;sub=cart">shopping carts</a> for a list of suitable ones, or contact your Relationship Manager). If the Cart ID is not unique, then you must use the <code class="attribute">orderCode</code> attribute with a unique number added to the static Cart ID.</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>  &lt;submit&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;order orderCode="T0211010"&gt; </p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;[remaining order information goes here]</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;/order&gt;  </p>
+                    <p>  &lt;/submit&gt;</p>
+                </div>
+            </div>
+            <h3>description and amount</h3>
+            <p>The first two order child elements are description and amount: </p>
+            <table style="mc-table-style: url('../resources/tablestyles/standardtable.css');" class="TableStyle-StandardTable" cellspacing="0">
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <thead>
+                    <tr class="TableStyle-StandardTable-Head-Header1">
+                        <th class="TableStyle-StandardTable-HeadE-Normal-Header1">
+                            <p>Child element</p>
+                        </th>
+                        <th class="TableStyle-StandardTable-HeadD-Normal-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">description</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Used to contain a simple, one-line description of the order (up to 255 characters long).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyB-Normal-Normal">
+                            <p><code class="CodeChar">amount</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyA-Normal-Normal">
+                            <p>Has three attributes:</p>
+                            <ul>
+                                <li value="1">
+                                    <p><code class="Attribute">value</code>, which specifies the total amount the shopper is expected to pay </p>
+                                </li>
+                                <li style="list-style-type: disc;" value="2">
+                                    <p><code class="Attribute">currencyCode</code>, which specifies the currency (ISO 4217 code) </p>
+                                </li>
+                                <li style="list-style-type: disc;" value="3">
+                                    <p><code class="Attribute">exponent</code>, which specifies where the decimal point or comma should be placed in the value, counting from the right </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>For a list of currency codes and their respective exponents, see <a href="#">ISO currency codes</a>.</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;order orderCode="T0211010"&gt; </p>
+                    <p>&#160;&#160;&lt;description&gt;20 red roses from the MyMerchant webshop.&lt;/description&gt;</p>
+                    <p>&#160;&#160;&lt;amount currencyCode="GBP" exponent="2" value="5000"/&gt;</p>
+                    <p>&lt;/order&gt;  </p>
+                </div>
+            </div>
+            <h3>orderContent child element</h3>
+            <p>The third <code class="CodeChar">&lt;order&gt;</code> child element is <code class="CodeChar">&lt;orderContent&gt;</code>. The <code class="CodeChar">&lt;orderContent&gt;</code> child element is used to contain the order content. You can deliver the content of the order in HTML format. When supplying HTML order content:</p>
+            <ul>
+                <li value="1">
+                    <p>You must place all HTML tags between the <code class="CodeChar">&lt;body&gt;</code> and <code class="CodeChar">&lt;/body&gt;</code> tags of a valid HTML document</p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>You cannot use scripting in the order content  </p>
+                </li>
+            </ul>
+            <p>Always place the order content in a CDATA section to avoid parsing problems:</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;orderContent&gt;</p>
+                    <p>  &lt;! [CDATA [Place HTML content here]] &gt;</p>
+                    <p>&lt;/orderContent&gt; </p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption">orderContent</p>
+            <h3>paymentDetails child element</h3>
+            <p>The <code class="CodeChar">&lt;paymentDetails&gt;</code> child element is the fifth <code class="CodeChar">&lt;order&gt;</code> child element . The <code class="CodeChar">&lt;paymentDetails&gt;</code> element contains the details of the selected payment method.</p>
+            <p>To enable the Worldpay payment service to submit a 3D Secure transaction successfully, the <code class="CodeChar">&lt;paymentDetails&gt;</code> element must also include information about the shopper’s browser session.</p>
+            <p>The child element session (which contains the <code class="CodeChar">&lt;shopperIPAddress&gt;</code> and <code class="CodeChar">&lt;session ID&gt;</code> elements) contains the shopper’s browser session information.</p>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>Every payment method has its own set of elements and attributes. For the list of available payment method codes for the XML Direct model, including child elements, see:
+</p>
+            <ul>
+                <li value="1">
+                    <p>The Worldpay DTD at <a href="#">http://dtd.worldpay.com/v1/</a></p>
+                </li>
+                <li value="2">
+                    <p><a href="#">Payment method codes</a>
+                    </p>
+                </li>
+            </ul>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>Worldpay uses the payment details and session information for risk assessment. This information is also a mandatory element in 3D Secure orders. </p>
+            <h4>paymentDetails example: card payment</h4>
+            <p>This example shows a card payment, where <code class="CodeChar">&lt;CARD-SSL&gt;</code> is the payment method code:</p>
+            <p onclick="select_all(block_1)" class="SelectCode">Select</p>
+            <div class="KeepTogether">
+                <div class="CodeBlock" id="block_1">
+                    <div class="prettyprint">
+                        <p>&lt;paymentDetails&gt;</p>
+                        <p>&#160;&#160;&lt;CARD-SSL&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;cardNumber&gt;44444433333322221111&lt;/cardNumber&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;expiryDate&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;date month="09" year="2009"/&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;/expiryDate&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;cardHolderName&gt;J. Shopper&lt;/cardHolderName&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;cvc&gt;123&lt;/cvc&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;cardAddress&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;address&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address1&gt;47A&lt;/address1&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address2&gt;Queensbridge Road&lt;/address2&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address3&gt;Suburbia&lt;/address3&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;postalCode&gt;CB94BQ&lt;/postalCode&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;city&gt;Cambridge&lt;/city&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;state&gt;Cambridgeshire&lt;/state&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;countryCode&gt;GB&lt;/countryCode&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;telephoneNumber&gt;0122312345&lt;/telephoneNumber&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/address&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;/cardAddress&gt;</p>
+                        <p>&#160;&#160;&lt;/CARD-SSL&gt;</p>
+                        <p>&#160;&#160;&lt;session shopperIPAddress="123.123.123.123" id="0215ui8ib1" /&gt;</p>
+                        <p>&lt;/paymentDetails&gt;	</p>
+                    </div>
+                </div>
+                <p class="CodeBlockCaption">paymentDetails: Visa payment</p>
+            </div>
+            <p><code class="CodeChar">&lt;CARD-SSL&gt;</code> - Used for card payments, such as Visa credit and Visa debit card payments.</p>
+            <p><code class="CodeChar">&lt;cvc&gt;</code>
+- Contains the Card Verification Code. </p>
+            <h3>shopper child element</h3>
+            <p>The <code class="CodeChar">&lt;shopper&gt;</code> child element is the sixth order child element, and it contains further information about the cardholder making the payment.</p>
+            <p>It includes the <code class="CodeChar">&lt;shopperEmailAddress&gt;</code> element, which is used by the Worldpay payment service to:</p>
+            <ul>
+                <li value="1">
+                    <p>Identify possible fraudulent transactions </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Send an email to the shopper when the payment is authorised or refused </p>
+                </li>
+            </ul>
+            <p>To redirect the shopper to the correct card issuer site for 3D Secure authentication, the <code class="CodeChar">&lt;shopper&gt;</code> element must also include information about the shopper’s browser settings (using the elements browser, <code class="CodeChar">&lt;acceptHeader&gt;</code> and <code class="CodeChar">&lt;userAgentHeader&gt;</code>).</p>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>The shopper is only redirected for 3D Secure authentication if Worldpay can confirm that the shopper has enrolled with the 3D Secure scheme.</p>
+            <p onclick="select_all(block_2)" class="SelectCode">Select</p>
+            <div class="CodeBlock" id="block_2">
+                <div class="prettyprint">
+                    <p>&lt;shopper&gt;</p>
+                    <p>&#160;&#160;&lt;shopperEmailAddress&gt;jshopper@myprovider.int&lt;/shopperEmailAddress&gt;</p>
+                    <p>&#160;&#160;&lt;browser&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;acceptHeader&gt;text/html,application/xhtml+xml,application/xml ;q=0.9,*/*;q=0.8&lt;/acceptHeader&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;userAgentHeader&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1;en-GB; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729)&lt;/userAgentHeader&gt;</p>
+                    <p>&#160;&#160;&lt;/browser&gt;</p>
+                    <p>&lt;/shopper&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption">Shopper: Firefox browser information</p>
+            <p class="NoteHeading"><code class="CodeChar">&lt;acceptHeader&gt;</code> - Must contain exactly the same content as the HTTP accept header that was sent to you by the shopper’s user agent.</p>
+            <p><code class="CodeChar">&lt;userAgentHeader&gt;</code>
+- Must contain exactly the same content as the HTTP user-agent header that was sent to you by the shopper’s user agent.</p>
+            <h3>authorisationAmountStatus element</h3>
+            <p>Applies to the ECMC-SSL and MAESTRO-SSL payment method codes only.The <code class="CodeChar">&lt;authorisationAmountStatus&gt;</code> child element enables you to flag non-zero value authorisation requests to MasterCard and Maestro as either a ‘pre-authorisation’ or a final authorisation. </p>
+            <div class="Note">
+                <p data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>You are advised to only use the <code class="CodeChar">&lt;authorisationAmountStatus&gt;</code> element flag if you have a defined mix of 'pre' and 'final' transactions. If you would like to flag all your transactions as 'preauthorisations', please contact your Relationship Manager. They will arrange for the 'pre' flag to be applied to all your transactions.</p>
+                <p>Any authorisation you submit  which is not flagged as a pre-authorisation or final authorisation will be flagged by Worldpay as a final authorisation when submitted to MasterCard and Maestro. Authorisations not coded correctly (either 'final' or 'pre') will incur a financial penalty, as a result of integrity fees introduced by MasterCard and Maestro.<br /></p>
+            </div>
+            <p>For further details of pre-authorisations and final authorisations, see <a href="#">MasterCard and Maestro authorisation</a>.</p>
+            <h4>Value attribute</h4>
+            <p>Entered values are <b>estimated</b> (for pre-authorisation) and <b>actual</b> (for final authorisation). </p>
+            <h4>Authorisation types are:</h4>
+            <ul>
+                <li value="1">
+                    <p><span style="font-weight: bold;font-style: normal;">Pre-authorisation</span> - this should be selected any time that you are holding funds in a cardholder's account for longer than four days, or where you are estimating the final amount of the transaction. Pre-authorisations are widely used by industries in the travel and entertainment sector such as hotels, car rental and travel agents.</p>
+                </li>
+                <li value="2">
+                    <p><span style="font-weight: bold;font-style: normal;">Final</span> - this applies to transactions where the goods or services can be dispatched and cleared within four working days of the original authorisation request, for the full amount.</p>
+                </li>
+            </ul>
+            <p><span style="font-weight: bold;font-style: normal;">Example</span>:  <b>estimated</b> (pre-authorisation)</p>
+            <div class="KeepTogether">
+                <p onclick="select_all(block_3)" class="SelectCode">Select</p>
+                <div class="CodeBlock" id="block_3">
+                    <div class="prettyprint">
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/address&gt; </p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/cardAddress&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;/CARD-SSL&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;session shopperIPAddress="123.123.123.123" /&gt;</p>
+                        <p>&#160;&#160;&#160;&lt;/paymentDetails&gt;</p>
+                        <p>&#160;&#160;&#160;&lt;shopper&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;shopperEmailAddress&gt;sp@worldpay.com&lt;/shopperEmailAddress&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;browser&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;acceptHeader&gt;text/html&lt;/acceptHeader&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;userAgentHeader&gt;Mozilla/5.0 ...&lt;/userAgentHeader&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;/browser&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;/shopper&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&#160;&lt;authorisationAmountStatus value="estimated" /&gt;</p>
+                        <p>&#160;&#160;&#160;&#160;&lt;/order&gt;</p>
+                        <p>&#160;&#160;&lt;/submit&gt;</p>
+                        <p>&lt;/paymentService&gt;</p>
+                    </div>
+                </div>
+            </div>
+            <p><span style="font-weight: bold;font-style: normal;">Example</span>:  <b>actual</b> (final authorisation)</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;authorisationAmountStatus value="actual" /&gt;</p>
+                </div>
+            </div>
+            <p>For details of responses to your authorisation request, see <a href="#">Responses to an XML Direct order</a>.</p>
+            <div class="BestPrac">
+                <p data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #e18b00;&quot; class=&quot;mcFormatColor&quot;&gt;Best practice:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #e18b00;" class="mcFormatColor">Best practice:&#160; </span></b></span></span><b style="color: #696969;">Send messages to fully qualified domains</b>
+                </p>
+                <p>Don’t send messages to specific IP addresses, as these can change, leading to a break in communications – sometimes we need to move to different IP addresses in our range to communicate with you.</p>
+            </div>
+        </div>
+        <div class="H2Block">
+            <h2>Example XML Direct order</h2>
+            <p>The following example shows a complete order for the XML Direct model: </p>
+            <p onclick="select_all(block_4)" class="SelectCode">Select</p>
+            <div class="CodeBlock" id="block_4">
+                <div class="prettyprint">
+                    <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                    <p>&lt;!DOCTYPE paymentService PUBLIC "-//WorldPay//DTD WorldPay PaymentService v1//EN"</p>
+                    <p>"http://dtd.worldpay.com/paymentService_v1.dtd"&gt;</p>
+                    <p>&lt;paymentService version="1.4" merchantCode="MYMERCHANT"&gt;</p>
+                    <p>&#160;&#160;&lt;submit&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;order orderCode="T0211010"&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;description&gt;20 red roses from the MyMerchant webshop.&lt;/description&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;amount currencyCode="GBP" exponent="2" value="5000"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;paymentDetails&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;CARD-SSL&gt; </p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;cardNumber&gt;44444433333322221111&lt;/cardNumber&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;expiryDate&gt;&lt;date month="09" year="2009"/&gt;&lt;/expiryDate&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;cardHolderName&gt;J. Shopper&lt;/cardHolderName&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;cvc&gt;123&lt;/cvc&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;cardAddress&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address1&gt;47A&lt;/address1&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address2&gt;Queensbridge Road&lt;/address2&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;address3&gt;Suburbia&lt;/address3&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;postalCode&gt;CB94BQ&lt;/postalCode&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;city&gt;Cambridge&lt;/city&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;state&gt;Cambridgeshire&lt;/state&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;countryCode&gt;GB&lt;/countryCode&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;telephoneNumber&gt;0122312345&lt;/telephoneNumber&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/address&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/cardAddress&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/CARD-SSL&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;session shopperIPAddress="123.123.123.123" id="0215ui8ib1"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/paymentDetails&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;shopper&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;shopperEmailAddress&gt;jshopper@myprovider.int&lt;/shopperEmailAddress&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;browser&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;acceptHeader&gt;text/html,application/xhtml+xml,application/xml ;q=0.9,*/*;q=0.8&lt;/acceptHeader&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;userAgentHeader&gt;Mozilla/5.0 (Windows; U; Windows NT 5.1;en-GB; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5 (.NET CLR 3.5.30729) &lt;/userAgentHeader&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/browser&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/shopper&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;statementNarrative&gt;Statement narrative text goes here&lt;/statementNarrative&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;/order&gt;</p>
+                    <p>&#160;&#160;&lt;/submit&gt;</p>
+                    <p>&lt;/paymentService&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption">Example XML Direct order</p>
+            <p class="Warning" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #f01e14;&quot; class=&quot;mcFormatColor&quot;&gt;Warning:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #f01e14;" class="mcFormatColor">Warning:&#160; </span></b></span></span>If you're an MCC&#160;6012 merchant, there is some important information you need to know <a href="#">here</a>.</p>
+        </div>
+        <div class="H2Block">
+            <h2><a name="Response"></a>Responses to an XML Direct order</h2>
+            <p>When you send the Worldpay payment service a valid XML order with payment details, the payment service sends that information to the financial institutions (acquirers) for authorisation. The result of the authorisation request is reported to Worldpay as either:</p>
+            <ul>
+                <li value="1">
+                    <p>AUTHORISED</p>
+                </li>
+                <li value="2">
+                    <p>REFUSED</p>
+                </li>
+                <li value="3">
+                    <p>ERROR (if there is a problem with the order)</p>
+                </li>
+            </ul>
+            <p>In the XML Direct model, Worldpay then sends an XML response back to your system about the payment status of the order.</p>
+            <div class="Note">
+                <p data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>To parse XML responses from the Worldpay payment service, you must use an industry standard XML parser. Home made parsers may not correctly interpret the messages Worldpay sends you. </p>
+                <p>For more information about the different payment statuses that a payment can be given during its life cycle, see <a href="#">Payment status definitions</a>. For a list of payment status response codes, see <a href="#">Acquirer Response Codes.</a> <br /></p>
+            </div>
+            <h3>Example AUTHORISED reply message</h3>
+            <p>An AUTHORISED reply message is sent by Worldpay when the financial institution (acquirer) has approved the payment.</p>
+            <p>Although an AUTHORISED response is a strong indication that the payment details that were submitted are valid, it is not a guarantee of payment. For more information, see <a href="#">The Payment Process</a>. </p>
+            <p>The following example shows a reply from Worldpay after a payment has been successfully authorised:</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+                    <p>&lt;!DOCTYPE paymentService PUBLIC "-//WorldPay//DTD WorldPay PaymentService v1//EN"</p>
+                    <p>&#160;&#160;"http://dtd.worldpay.com/paymentService_v1.dtd"&gt;</p>
+                    <p>&lt;paymentService version="1.4.1" merchantCode="MYMERCHANT"&gt;</p>
+                    <p>&#160;&#160;&lt;reply&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;orderStatus orderCode="T0211010"&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;payment&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;paymentMethod&gt;VISA-SSL&lt;/paymentMethod&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;amount value="5000" currencyCode="GBP" exponent="2" debitCreditIndicator="credit"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;lastEvent&gt;AUTHORISED&lt;/lastEvent&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;CVCResultCode description="APPROVED"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;balance accountType="IN_PROCESS_AUTHORISED"&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;amount value="5000" currencyCode="GBP" exponent="2" debitCreditIndicator="credit"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;/balance&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;cardNumber&gt;4444********1111&lt;/cardNumber&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;riskScore value="0"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/payment&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;/orderStatus&gt;</p>
+                    <p>&#160;&#160;&lt;/reply&gt;</p>
+                    <p>&lt;/paymentService&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption">AUTHORISED reply from Worldpay</p>
+            <h4>Key to example AUTHORISED reply</h4>
+            <table style="mc-table-style: url('../resources/tablestyles/standardtable.css');" class="TableStyle-StandardTable" cellspacing="0">
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <thead>
+                    <tr class="TableStyle-StandardTable-Head-Header1">
+                        <th class="TableStyle-StandardTable-HeadE-Normal-Header1">
+                            <p>Child element</p>
+                        </th>
+                        <th class="TableStyle-StandardTable-HeadD-Normal-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">payment</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Contains the relevant payment details and status information for the order.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">amount</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Contains the:</p>
+                            <ul style="list-style-type: disc;">
+                                <li style="list-style-type: disc;" value="1">
+                                    <p><code class="attribute">value</code>, which specifies the total amount the shopper is expected to pay </p>
+                                </li>
+                                <li style="list-style-type: disc;" value="2">
+                                    <p><code class="attribute">currencyCode</code>, which  specifies the currency (ISO 4217 code)</p>
+                                </li>
+                                <li style="list-style-type: disc;" value="3">
+                                    <p><code class="attribute">exponent</code>, which specifies where the decimal point or comma should be placed in the value, counting from the right </p>
+                                </li>
+                                <li style="list-style-type: disc;" value="4">
+                                    <p><code class="attribute">debitCreditIndicator</code>, which indicates that the amount is positive (“credit") </p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">LastEvent</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Specifies the payment status (AUTHORISED).</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">CVCResultCode</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Reports the result of the Card Verification Code (CVC) check (“APPROVED").</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">balance</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>Reports on the balance in the account (“IN_PROCESS_AUTHORISED").</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p><code class="CodeChar">cardNumber</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>For credit  card payments, the first and last four digits of the card number are returned in the cardNumber element.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyB-Normal-Normal">
+                            <p><code class="CodeChar">riskScore</code>
+                            </p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyA-Normal-Normal">
+                            <p>Shows the score that the Risk Management Service assigned to the authorisation request (“0"), if you have it.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>For the full list of the reply element’s child elements and attributes, see the Worldpay DTD at <a href="#">http://dtd.worldpay.com/v1/</a>.</p>
+            <h3>Example REFUSED reply message</h3>
+            <p>A REFUSED reply is sent by Worldpay when the financial institution (the acquirer) has refused to authorise the payment.</p>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>Reasons for refusing a payment include the shopper having gone over their credit limit, an incorrect expiry date, and insufficient funds. For a full list of REFUSED response codes, see <a href="#">Acquirer Response Codes</a>. </p>
+            <p>This example shows a reply from Worldpay after a payment has been refused:</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt; </p>
+                    <p>&lt;!DOCTYPE paymentService PUBLIC "-//WorldPay//DTD WorldPay PaymentService v1//EN" "http://dtd.worldpay.com/paymentService_v1.dtd"&gt;</p>
+                    <p>&lt;paymentService version="1.4.1" merchantCode="MYMERCHANT"&gt;</p>
+                    <p>&#160;&#160;&lt;reply&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;orderStatus orderCode="T0211234"&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;payment&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;paymentMethod&gt;ECMC-SSL&lt;/paymentMethod&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;amount value="162095" currencyCode="GPB" exponent="2"  debitCreditIndicator="credit"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;lastEvent&gt;REFUSED&lt;/lastEvent&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;CVCResultCode description="NOT SUPPLIED BY SHOPPER"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;ISO8583ReturnCode code="33" description="CARD EXPIRED"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;riskScore value="0"/&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&#160;&#160;&lt;/payment&gt;</p>
+                    <p>&#160;&#160;&#160;&#160;&lt;/orderStatus&gt;</p>
+                    <p>&#160;&#160;&lt;/reply&gt;</p>
+                    <p>&lt;/paymentService&gt;</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption"> Example REFUSED reply</p>
+            <p>Because no more processing takes place after a payment has been refused, a REFUSED reply message does not present any balance information. In the above example, the element <code class="CodeChar">&lt;ISO8583ReturnCode&gt;</code>shows:</p>
+            <ul style="list-style-type: disc;">
+                <li style="list-style-type: disc;" value="1">
+                    <p>The refusal response code from the acquirer (“<span style="color: #ff0000;">33</span>") </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>The mapped description (reason) from Worldpay (“<span style="color: #ff0000;">CARD EXPIRED</span>") </p>
+                </li>
+            </ul>
+            <h3>Other ways of reporting changes to payments</h3>
+            <p>As well as the reply message, the Worldpay payment service can report the status of individual payments to your system using:</p>
+            <ul style="list-style-type: disc;">
+                <li style="list-style-type: disc;" value="1">
+                    <p>HTTPS </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Email order notifications </p>
+                </li>
+                <li style="list-style-type: disc;" value="3">
+                    <p>The Merchant Interface</p>
+                </li>
+            </ul>
+            <p>Your system has to determine if a payment was successful by interpreting the status information supplied by Worldpay.</p>
+            <h3>Payment statuses in the pendingURL </h3>
+            <p>You can view additional information about the transaction status where the shopper:</p>
+            <ul style="list-style-type: disc;">
+                <li style="list-style-type: disc;" value="1">
+                    <p>Has used an alternative payment method supported by Worldpay AP Ltd </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>Has been redirected to your <code class="CodeChar">&lt;pendingURL&gt;</code></p>
+                </li>
+            </ul>
+            <p>The transaction status shows you:</p>
+            <ul style="list-style-type: disc;">
+                <li style="list-style-type: disc;" value="1">
+                    <p>The overall status of the payment </p>
+                </li>
+                <li style="list-style-type: disc;" value="2">
+                    <p>The reason why the shopper was redirected to your pendingURL</p>
+                </li>
+            </ul>
+            <p>For example, the shopper can be redirected to a pendingURL of the following form:</p>
+            <div class="CodeBlock">
+                <div class="prettyprint">
+                    <p>http://www.merchant.com/pending.jsp?orderKey=ORD00XW01^MERCHANTXB^jsxml219506440&amp;status=ERROR</p>
+                </div>
+            </div>
+            <p class="CodeBlockCaption">pendingURL</p>
+            <p>You can use the transaction status information to manage the pending scenario appropriately, for example by allowing the shopper to retry or select another payment type if an ERROR, FAILURE, or EXPIRED status is returned.</p>
+            <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>For more information about alternative payment methods, see the <a href="http://support.worldpay.com/support/kb/gg/alternativepayments/APMGuide.htm">Alternative Payment Methods Guide</a>. </p>
+            <p>The various transaction statuses reported by the payment method provider in the pendingURL are: </p>
+            <table style="mc-table-style: url('../resources/tablestyles/standardtable.css');" class="TableStyle-StandardTable" cellspacing="0">
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <col class="TableStyle-StandardTable-Column-Normal" />
+                <thead>
+                    <tr class="TableStyle-StandardTable-Head-Header1">
+                        <th class="TableStyle-StandardTable-HeadE-Normal-Header1">
+                            <p>Status</p>
+                        </th>
+                        <th class="TableStyle-StandardTable-HeadD-Normal-Header1">
+                            <p>Description</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p>OPEN</p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>The transaction is awaiting action by the shopper. This is the result for any offline payment method.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p>ERROR</p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>There was a technical problem during the transaction.</p>
+                            <p>Some payment method providers also return this response when a shopper has cancelled their transaction.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyE-Normal-Normal">
+                            <p>FAILURE</p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyD-Normal-Normal">
+                            <p>The payment has been refused. This is an uncommon response because:</p>
+                            <ul style="list-style-type: disc;">
+                                <li style="list-style-type: disc;" value="1">
+                                    <p>Most alternative payment methods involve pre-funding rather than real-time authorisations </p>
+                                </li>
+                                <li style="list-style-type: disc;" value="2">
+                                    <p>Transactions are usually cancelled by the shopper rather than declined by a real-time authorisation</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-StandardTable-Body-Normal">
+                        <td class="TableStyle-StandardTable-BodyB-Normal-Normal">
+                            <p>EXPIRED</p>
+                        </td>
+                        <td class="TableStyle-StandardTable-BodyA-Normal-Normal">
+                            <p>The shopper session has expired.</p>
+                            <p>This status is returned if the shopper initiates a transaction, but does not complete it.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Telling the shopper about the status of a payment</h3>
+            <p>You can send an email to the shopper confirming whether the payment has been accepted or declined.</p>
+            <p>Unlike an online notification, a shopper can keep this information for their records. </p>
+            <div class="KeepTogether">
+                <p class="Note" data-mc-autonum="&lt;b&gt;&lt;span style=&quot;color: #69197d;&quot; class=&quot;mcFormatColor&quot;&gt;Note:&#160; &lt;/span&gt;&lt;/b&gt;"><span class="autonumber"><span><b><span style="color: #69197d;" class="mcFormatColor">Note:&#160; </span></b></span></span>If you would like Worldpay to send the email notification, email <a href="mailto:corporatesupport@worldpay.com">corporatesupport@worldpay.com</a>. When this feature has been activated, you can edit the settings and the text of the email notifications by going to the <a href="http://support.worldpay.com/support/kb/gg/merchantinterface/mai0000.html">Merchant Interface</a> &gt; Edit Channels.<br /></p>
+            </div>
+            <p>To send an email notification to the shopper you can:</p>
+            <ul>
+                <li value="1">
+                    <p><b>Send the email from your system</b> <br />To do this,  configure your system to send an email in response to an automated order notification from our payment service </p>
+                </li>
+                <li value="2">
+                    <p><b>Send the email from Worldpay</b> <br />To do this, set up your Worldpay account so that it instructs our payment service to send an email after a successful authorisation or a refusal  </p>
+                </li>
+            </ul>
+        </div>
+        <div class="OtherPage">
+            <p>To implement 3D&#160;Secure, click <a href="#">here</a></p>
+            <p>To modify an order, click <a href="#">here</a></p>
+        </div>
+        <table style="width: 100%;mc-table-style: url('../resources/tablestyles/tripanefootertable.css');" class="TableStyle-TripaneFooterTable" cellspacing="0">
+            <col class="TableStyle-TripaneFooterTable-Column-Column1" />
+            <col style="width: 60%;" class="TableStyle-TripaneFooterTable-Column-Column1" />
+            <tbody>
+                <tr class="TableStyle-TripaneFooterTable-Body-Body1">
+                    <td class="TableStyle-TripaneFooterTable-BodyE-Column1-Body1"><span style="color: #000000;">Guide feedback?</span>
+                        <br />Email us at:&#160;<a href="mailto:guides@worldpay.com" title="Send us your feedback" alt="Send us your feedback">guides@worldpay.com</a></td>
+                    <td style="text-align: right;" class="TableStyle-TripaneFooterTable-BodyD-Column1-Body1" rowspan="2"><a href="https://plus.google.com/102354760000065809589" target="_parent"><img style="margin-right: 6px;" src="../resources/images/footer/google-icon-30x30.jpg" /></a><a href="https://www.linkedin.com/company/worldpay" target="_parent"><img style="margin-right: 6px;" src="../resources/images/footer/linkedin-icon-30x30.jpg" /></a><a href="https://www.youtube.com/user/WorldpayGlobal" target="_parent"><img style="margin-right: 6px;" src="../resources/images/footer/youtube-icontrans-30x30.png" /></a><a href="https://twitter.com/worldpay" target="_parent"><img style="margin-right: 6px;" src="../resources/images/footer/twitter-icon-30x30.jpg" /></a><a href="https://www.facebook.com/WorldPay" target="_parent"><img style="margin-right: 6px;" src="../resources/images/footer/facebook-icon-30x30.jpg" /></a>
+                    </td>
+                </tr>
+                <tr class="TableStyle-TripaneFooterTable-Body-Body1">
+                    <td class="TableStyle-TripaneFooterTable-BodyB-Column1-Body1"><span class="GlobalCopyright">© Worldpay 2017. All rights reserved.</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

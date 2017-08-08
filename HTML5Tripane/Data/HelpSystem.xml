@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebHelpSystem DefaultUrl="content/projectstyleguide.htm" Toc="Data/Tocs/TripaneAndPDF.js" Index="Data/Index.js" Concepts="Data/Concepts.js" SearchDatabase="Data/Search.js" Synonyms="Data/Synonyms.xml" PathToScriptsFolder="Resources/Scripts/" SkinName="HTML5Tripane" SkinID="HTML5Tripane" Multilingual="false" Skins="HTML5Tripane" BuildTime="08/08/2017 10:56:00" BuildVersion="13.2.6355.27565" TargetType="WebHelp2" SkinTemplateFolder="Skin/" InPreviewMode="false" TopNavTocPath="true" MoveOutputContentToRoot="false" ReplaceReservedCharacters="true" MakeFileLowerCase="true" UseCustomTopicFileExtension="false" PreventExternalUrls="false" EnableResponsiveOutput="true" IncludeGlossarySearchResults="true" ResultsPerPage="20" xml:lang="en-gb" LanguageName="English" SearchEngine="MadCapSearch">
+    <CatapultSkin Version="2" SkinType="WebHelp2" Comment="HTML5 Tripane light themed skin" Anchors="Width,Height" Width="800" Height="600" Top="0" Left="0" Bottom="0" Right="0" Tabs="TOC" DefaultTab="TOC" UseBrowserDefaultSize="true" UseDefaultBrowserSetup="True" EnableResponsiveOutput="true" AutoSyncTOC="true" RemoveImagesOnSave="true" Title="" conditions="General.GlobalLink" NavigationLinkTop="true" NavigationLinkBottom="false" Name="HTML5Tripane" SkinID="HTML5Tripane" SkinClass="_Skins_HTML5Tripane" HideNavOnStartup="False" LogoUrl="">
+        <Toolbar EnableCustomLayout="true" Buttons="">
+            <Script>    $(document).ready(function(){
+       $("div#header&gt;a").attr({href: "http://www.worldpay.com"});   
+    });
+
+
+/* This adds a link to the skin.css file - Content/Resources/Styleheets/TripaneskinStyles.css */
+$('&lt;link&gt;')
+	.appendTo($('head'))
+	.attr({type: 'text/css', rel: 'stylesheet'})
+	.attr('href', 'content/resources/stylesheets/tripaneskinstyles.css');
+
+// Google Tag Manager
+(function(w, d, s, l, i){w[l] = w[l] || [];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),dl = l != 'dataLayer' ? '&amp;l=' + l:'';j.async = true;j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MHWK24J');</Script>
+        </Toolbar>
+        <WebHelpOptions MobileBreakpoint="641" TabletBreakpoint="1100" />
+    </CatapultSkin>
+</WebHelpSystem>
