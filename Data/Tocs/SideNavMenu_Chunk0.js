@@ -1,0 +1,1 @@
+define({'/content/common/aboutthisguide.htm':{i:[2],t:['About this guide'],b:['']},'/content/emptystartingtopic.htm':{i:[1],t:['Starting topic'],b:['']},'/content/resources/templates/standardtemplate.htm':{i:[0],t:['Menu 1'],b:['']}});
