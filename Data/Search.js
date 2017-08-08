@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0],u:['../content/common/aboutthisguide.htm'],s:['0','langua','tent'],p:[['0',2]]});
