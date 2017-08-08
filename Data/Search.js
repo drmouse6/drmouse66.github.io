@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],u:['../content/index.htm'],s:['\u0027re','sao'],p:[['404',1]]});

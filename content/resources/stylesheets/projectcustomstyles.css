@@ -1,0 +1,437 @@
+/*<meta />*/
+
+/* Use this stylesheet if you need to create customised styles for your project or overwrite a style in the global stylesheets
+This stylesheet is not linked to the global template */
+
+div.nosidenav
+{
+	margin-top: 60px;
+	margin-left: 96px;
+	margin-right: 96px;
+}
+
+div.subcontent
+{
+	padding-left: 2rem;
+	padding-top: 1.375rem;
+	padding-right: 2rem;
+	mc-disabled: true;
+	background-color: #fff;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+div.subcontent h2
+{
+	font-size: 16px;
+}
+
+hr.shortred
+{
+	color: #f01e14;
+	width: 35px;
+	border-style: solid;
+	border-width: 2px;
+	margin-bottom: 28px;
+	margin-top: 15px;
+}
+
+a.emeraldbtn
+{
+	display: inline-block;
+	border: solid 1px #007867;
+	background: #007867;
+	border-radius: 20px;
+	opacity: 1;
+	padding: 8px 25px 6px 25px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+a.emeraldbtn:hover
+{
+	background: #00948a;
+	text-decoration: none;
+	border-color: #00948a;
+}
+
+.emeraldbtn a
+{
+	color: #fff;
+}
+
+.emeraldbtn a:hover
+{
+	text-decoration: none;
+}
+
+.emeraldborderbtn a:hover
+{
+	text-decoration: none;
+}
+
+a.emeraldborderbtn
+{
+	display: inline-block;
+	border: solid 1px #007867;
+	background: #fff;
+	border-radius: 20px;
+	opacity: 1;
+	padding: 8px 25px 6px 25px;
+	color: #007867;
+	margin-top: 20px;
+}
+
+a.emeraldborderbtn:hover
+{
+	background: rgba(0, 120, 103, 0.1);
+	text-decoration: none;
+	border-color: #00948a;
+}
+
+.emeraldborderbtn a
+{
+	color: #007867;
+}
+
+p.guidelink
+{
+	font-size: 140%;
+}
+
+p.guidelink > a
+{
+	font-weight: 200;
+}
+
+div.Row3cell	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Row3cell::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Row3cell::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Row3cell > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.Row3cell > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	padding-left: 0;
+}
+
+div.Row3cell > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	padding-left: 30px;
+}
+
+div.Row3cell > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+	padding-right: 0;
+}
+
+div.Row3cell > div:nth-child(4)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+div.Row3cell > div:nth-child(5)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+div.Row3cell > div:nth-child(6)
+{
+	width: 8.3333%;
+	margin-left: 0%;
+}
+
+div.Row2cell1	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Row2cell1::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Row2cell1::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Row2cell1 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Row2cell1 > div:nth-child(1)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Row2cell1 > div:nth-child(2)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Row2cell1 > div:nth-child(3)
+{
+	width: 33.33333%;
+	margin-left: 0%;
+}
+
+div.Row2cell2	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.Row2cell2::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.Row2cell2::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.Row2cell2 > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.Row2cell2 > div:nth-child(1)
+{
+	width: 50%;
+	margin-left: 0%;
+	border-right-width: 15px;
+	border-right-color: #f7f7f7;
+	border-right-style: solid;
+	padding-right: 2rem;
+}
+
+div.Row2cell2 > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+	border-left-width: 15px;
+	border-left-color: #f7f7f7;
+	border-left-style: solid;
+	padding-left: 2rem;
+}
+
+@media only screen and (max-width: 1100px)
+{
+	div.nosidenav
+	{
+		margin-top: 60px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	div.Row3cell > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+		padding-right: 10px;
+		padding-left: 0;
+	}
+
+	div.Row3cell > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+		padding-left: 10px;
+	}
+
+	div.Row3cell > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+		padding-left: 10px;
+		padding-right: 0;
+	}
+
+	div.Row3cell > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div:nth-child(5)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div:nth-child(6)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	div.Row2cell1 > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell1 > div:nth-child(2)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell1 > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell2 > div:nth-child(1)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell2 > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 641px)
+{
+	div.Row3cell > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		padding-left: 0;
+	}
+
+	div.Row3cell > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+		padding-left: 0;
+		padding-right: 50px;
+	}
+
+	div.Row3cell > div:nth-child(4)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div:nth-child(5)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.Row3cell > div:nth-child(6)
+	{
+		width: 8.3333%;
+		margin-left: 0%;
+	}
+
+	div.subcontent
+	{
+		margin-bottom: 48px;
+	}
+
+	div.Row2cell1 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell1 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell1 > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.Row2cell2 > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		border: none;
+		padding-right: 0;
+	}
+
+	div.Row2cell2 > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		border: none;
+		padding-left: 0;
+	}
+}
+

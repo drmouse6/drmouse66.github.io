@@ -1,0 +1,189 @@
+/*<meta conditions="general.GlobalLink" />*/
+
+/*styles to override the tripane skin */
+
+div#contentBodyInner
+{
+	border: none;
+	/*border-radius: 8px;*/
+	/*top: 0;*/
+	/*margin-top: -40px;*/
+}
+
+.tabs-panel
+{
+	top: 0;
+}
+
+.tabs-nav li#TocTab
+{
+	display: none;
+}
+
+html.left-layout #contentBody
+{
+	border-radius: 0;
+}
+
+._Skins_TripaneToolbar .button.previous-topic-button
+{
+	margin-left: 2em;
+}
+
+/*toc layout settings */
+
+ul.tree.inner,
+.tree-node.tree-node-collapsed > div,
+.tree-node-leaf
+{
+	padding-left: 21px;
+}
+
+.tree-node.tree-node-expanded > div,
+.tree-node.tree-node-collapsed > div,
+.tree-node.tree-node-leaf > div
+{
+	padding-right: 6px;
+}
+
+.tree-node.tree-node-expanded > div,
+.tree-node.tree-node-expanded.tree-node-selected > div,
+.web .tree-node.tree-node-expanded > div:hover,
+.web .tree-node.tree-node-expanded.tree-node-selected > div:hover
+{
+	background-position-y: 6px;
+}
+
+.tree-node.tree-node-expanded > div:hover,
+.tree-node.tree-node-expanded.tree-node-selected > div:hover,
+.tree-node.tree-node-collapsed > div:hover,
+.tree-node.tree-node-collapsed.tree-node-selected > div:hover,
+.tree-node > div:hover,
+.tree-node.tree-node-selected > div:hover
+{
+	text-decoration: underline;
+}
+
+.tree-node.tree-node-expanded.tree-node-selected > div,
+.tree-node.tree-node-collapsed.tree-node-selected > div,
+.tree-node.tree-node-leaf.tree-node-selected > div
+{
+	border-right: 6px solid #b41437;
+	padding-right: 0;
+}
+
+html.left-layout #show-hide-navigation
+{
+	border-radius: 0;
+	webkit-box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*reduce impact of bold slightly*/
+
+em
+{
+	font-style: normal;
+	font-weight: 500;
+	color: #000;
+}
+
+b
+{
+	font-weight: 500;
+	color: #000;
+}
+
+span[style*="font-weight"]
+{
+	font-weight: 500 !important;
+	color: #000;
+}
+
+/* Search result style overrides */
+
+#pagination a
+{
+	border: none;
+	background-color: #f7f7f7;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 4px 12px;
+}
+
+#pagination a#selected
+{
+	color: #fff;
+	background-color: #f01e14;
+	border: none;
+}
+
+#pagination a:hover
+{
+	color: #fff;
+	background-color: #007867;
+	border: none;
+}
+
+.title a
+{
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 1100px)
+{
+	/*hide contents and home tabs */
+
+	.tabs-nav li#TocTab,
+	#home
+	{
+		display: none;
+	}
+
+	/*automatically display toc*/
+
+	.tab .tabs-panel
+	{
+		display: block;
+	}
+
+	ul.tree.inner
+	{
+		padding-left: 25px;
+	}
+
+	.tree-node.tree-node-collapsed > div
+	{
+		background: transparent url('../images/icons/right-link-bg.png') no-repeat left 10px center;
+		padding-left: 33px;
+	}
+
+	.tree-node.tree-node-collapsed.tree-node-selected > div
+	{
+		background: url('../images/icons/right-link-bg.png') no-repeat left 10px center, #007867;
+	}
+
+	.tree-node.tree-node-expanded > div
+	{
+		background: transparent url('../images/icons/bottom-link-bg.png') no-repeat left 6px center;
+		padding-left: 33px;
+	}
+
+	.tree-node.tree-node-expanded.tree-node-selected > div
+	{
+		background: url('../images/icons/bottom-link-bg.png') no-repeat left 6px center, #007867;
+	}
+
+	.tree-node.tree-node-leaf > div
+	{
+		background: transparent none no-repeat left 10px center;
+		padding-left: 11px;
+	}
+
+	.tree-node.tree-node-leaf.tree-node-selected > div
+	{
+		background: none no-repeat left 10px center, #007867;
+	}
+}
+
