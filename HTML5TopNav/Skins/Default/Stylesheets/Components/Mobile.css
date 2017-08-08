@@ -1,0 +1,171 @@
+/*<meta />*/
+
+@media only screen and (max-width: 641px)
+{
+	.search-bar
+	{
+		width: 100%;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component
+	{
+		width: 100%;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-field
+	{
+		background-color: #f7f7f7;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-filter
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-submit
+	{
+		
+	}
+
+	._Skins_SearchBar.mc-component .search-filter-content
+	{
+		top: 61px;
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-filter.open
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-filter:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-filter.selected
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background: transparent url('Images/Filter.png') no-repeat center center;
+	}
+
+	._Skins_SearchBar.mc-component .search-filter-content ul li:hover
+	{
+		background-color: #ffffff;
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-field::-webkit-input-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-field::-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-field:-moz-placeholder
+	{
+		
+	}
+
+	.search-bar._Skins_SearchBar.mc-component .search-field:-ms-input-placeholder
+	{
+		
+	}
+
+	.search-bar.search-bar-container._Skins_SearchBar.mc-component .search-submit
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background: #f7f7f7 url('Images/SearchIcon_1.png') no-repeat center center;
+	}
+
+	.search-bar.search-bar-container._Skins_SearchBar.mc-component .search-submit:hover
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: #f7f7f7;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component
+	{
+		display: none;
+		background: #333 none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component a
+	{
+		
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a
+	{
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul > li > a
+	{
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul > li > a
+	{
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a
+	{
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a
+	{
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a.selected
+	{
+		background: #007867 none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a:hover
+	{
+		background-color: transparent;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
+	{
+		background-repeat: repeat;
+		background: transparent none;
+	}
+
+	ul.menu._Skins_SideMenu.mc-component li > a.selected:hover
+	{
+		background: #007867 none;
+	}
+}
+
